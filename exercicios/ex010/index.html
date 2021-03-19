@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTML</title>
+</head>
+<body>
+<h1>Imagens dinâmicas</h1>
+<p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+<picture>
+    <source media="(max-width:750px )" srcset="Imagens/imagem-p.png" type="image/png">
+    <source media="(max-width:1050px)" srcset="Imagens/imagem-m.png" type="image/png">
+    <img src="Imagens/imagem-g.png" alt="imagem flexível">
+</picture>
+    
+<h1>Reproduzir áudio</h1>
+<p>Vamos aprender a reproduzir áudio em HTML5.</p>
+<audio src="midia/birthdayinfantil.mp3" controls autoplay></audio> <br>
+
+<audio preload="metadata" controls loop>
+    <source src="midia/happybirthdayjazz.mp3" type="audio/mpeg">
+</audio>
+
+<h1>Inserindo vídeos hospedados localmente</h1>
+<p>Este vídeo está hospedado no meu próprio servidor!</p>
+<video width="560" poster="Imagens/capavideo.png" controls>
+    <source src="videos/Meuvideo.webm.webm" type="video/webm">
+    <source src="videos/Meuvideo.m4v.m4v" type="video/m4v">
+    <source src="videos/meuvideo.ogv.ogv" type="video/ogv">
+    <source src="videos/meuvideo.mp4.mp4" type="video/mp4">
+    <p>Seu navegador não tem compatibilidade com nenhum dos vídeos.</p>
+</video>
+
+<h1>Inserindo vídeos do youtube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d3-uJY6xihI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
