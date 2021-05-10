@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    /*
+    medidas absolutas
+    cm(centímetros), mm(milímetros), in(polegadas), --px(pixels)--recomendada pela w3c, pt(ponto), pc(paica);
+
+    medidas relativas
+    --em--recomendada pela w3c, ex, rem, vw, vh, %
+    16px geralmente é o tamanho de 1em
+
+    */
+    font-size: 1em ;
+/* weidth(peso), width(largura), height(altura);*/
+}
+h1 {
+/* shorthand fonts->font-style->font-weigth->font-size->font-family
+font-style: Italic;
+font-weight: border;
+font-size: 3em;
+font-family: Arial, sans-serif;
+*/
+font: italic bolder 3em Arial, sans-serif;
+}
