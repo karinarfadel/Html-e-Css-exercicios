@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+
+@font-face {
+    font-family:'travel' ;
+    src: url('./fontes/travel.ttf'); format('truetype')
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor0: #027373;
+    --cor1:#04ADBF;
+    --cor2: #04BFBF;
+    --cor3:#F2E3D5;
+    --cor4:#7EA629;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Twinkle Star', cursive;
+    --font-travel: 'travel', cursive;
+}
+*{
+    margin: 15px;
+    padding: 15px;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #027373,#04ADBF,#04BFBF,#F2E3D5,#7EA629); 
+    background-attachment: fixed;  
+    font-family: var(--font-padrao);  
+
+}
+
+header >h1 {
+    text-align: center;
+    color: #F2E3D5;  
+    font-family: var(--font-travel);
+    font-size:100px;
+}
+header >p {
+    text-align: center;
+    color: #F2E3D5;  
+    font-family: var(--font-padrao);
+    font-size: 30px
+}
+nav{
+    background-color: #027373;
+    color: #F2E3D5;
+    border-radius: 5px;
+    box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.712);
+
+}
+
+main{
+    background-color: #F2E3D5;
+    border-radius: 5px;
+    box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.712);
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+
+}
+img{
+    width: 100%;
+    image-rendering: auto;
+}
+
+main h2 {
+    color: var(--cor0);
+    font-family: var(--font-destaque);
+
+}
+main h3 {
+    color: var(--cor1);
+    font-family: var(--font-destaque);
+}
+
+main h4 {
+    color: var(--cor4);
+    font-family: var(--font-destaque);
+}
+
+footer{
+    font-family: 'travel', Times, serif;
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+    font-style: italic;
+}
